@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+
+        <meta charset="utf-8">
+        <title>Serviços</title>
+        <link rel="stylesheet" href="stylecontato.css" >
+    </head>
+    
+    <body>
+
+        <header>
+            <a href="index.html" style="text-decoration: none;"><h1>Elétrica Monteiro</h1></a>
+            <section>
+                <div class="icone"><a href="https://www.freepik.com" title="Freepik" ><img src="arquivos/instagram.png"></a></div><!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>-->
+                <div class="icone"><a href="https://www.freepik.com" title="Freepik" ><img src="arquivos/logotipo-do-aplicativo-do-facebook.png" ></a></div><!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>-->
+                <div class="icone"><a href="https://www.freepik.com" title="Freepik" ><img src="arquivos/telefone.png" ></a></div><!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>-->
+            </section>    
+        </header>   
+
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sorteio.html">Sorteio</a>
+            <a href="nos.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <section class="container">
+
+            <div class="card">          <!--Formulario de contato-->
+                <form action="contato.php" method="GET">
+                    <p>Envie uma mensagem!</p>
+                    <input type="text" placeholder="Nome" size="40" required>  <br>
+                    <input type="email" placeholder="E-mail" size="40" required>   <br>
+                    <select style="padding:10px;" required>
+                        <option>Sugestões</option>
+                        <option>Dúvidas</option>
+                        <option>Reclamações</option>
+                        <option>Outros</option>
+                    </select>
+                    <p><input type="text" size="70" placeholder="Comentário" required></p>
+
+                    <div id="enviar"><input type="submit" class="but"></div>
+                </form>
+            </div>
+
+            <div class="card">      <!--Dados de contato-->
+                <br> <h1>Fale conosco:</h1> <br> 
+                <p>Central de atendimento: (31) 9 1234-1234</p> <br>
+                <p>Email: joao123@inexistente.com</p>
+            </div>
+
+        </section>
+    
+        <footer>
+            <p>Obrigado por visitar nosso site!</p>
+        </footer>
+    
+    </body>

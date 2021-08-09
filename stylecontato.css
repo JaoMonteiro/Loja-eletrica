@@ -1,0 +1,198 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(arquivos/Poppins-Regular.ttf);
+}
+
+header {
+    margin: auto;
+    padding:15px;
+    display:flex;
+    height: fit-content;
+    box-shadow: 0px 1px black;
+}
+
+header h1 {
+    margin-left: 40px;
+    margin-right: auto;
+    text-align: left;
+    font-family:Poppins, Arial;
+    font-size: 60px;
+    color: black;
+}
+
+header section {
+    display: flex;
+    margin-left: auto;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+}
+
+.icone img {
+    width: 50px;
+}
+
+nav {
+    margin: auto;
+    margin-top: 1px;
+    box-shadow: 0px 5px 5px grey;
+    text-align: center;
+    background-color: #F9B208;
+}
+
+nav a {
+    font-family: Poppins,Arial;
+    font-size: 30px;
+    text-decoration:none;
+    color:black;
+    font-weight: 700;
+    padding-inline: 20px;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-image: url(arquivos/city.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center 150px;
+    min-height: 500px;
+}
+
+#titulo {
+    padding-top: 50px;
+    padding-left: 20px;
+    color:white;
+    font-family: "Paddins",Arial;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px black;
+}
+
+#subtitulo {
+    padding-top: 20px;
+    padding-left: 50px;
+    color:white;
+    font-family: "Paddins",Arial;
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 2px 2px 7px black;
+}
+
+.container   {
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+
+.card:first-child {
+    margin: 20px auto;
+    border-radius: 16px;
+    padding: 15px 0px 15px 25px;
+    text-align: left;
+    font-family: "Paddins",Arial;
+    font-weight: 400;
+    background-color: white;
+    box-shadow: 5px 5px 15px #F9B208;
+    min-width: 500px;
+    font-family: "Paddins",Arial;
+    font-size: 25px;
+}
+
+.card {
+    margin: auto;
+    min-width: 500px;
+    height: fit-content;
+    border-radius: 16px;
+    padding: 15px 25px 25px 25px;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Paddins",Arial;
+    font-size: 25px;
+    background-color: white;
+    box-shadow: 5px 5px 15px #F9B208;
+}
+
+.card:hover {
+    transition: box-shadow 1s;
+    box-shadow: 15px 15px 20px #F9B208;
+}
+
+.card input {
+    margin: 15px auto;
+    padding:10px;
+    max-width: 400px;
+}
+
+.card button {
+    border-radius: 8px;
+    border:none;
+    background: linear-gradient(to right, #F9B208, #ffd673);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding:5px;
+}
+
+.but {
+    min-height: 50px;
+    min-width: 100px;
+    background-color: #F9B208;
+    color:white;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    border-radius: 1em;
+    box-shadow: 5px 4px 0 1px grey;
+    transition: all 0.1s ease;
+}
+
+.but:active {
+    box-shadow: 0 0 0 0 grey, inset 4px 6px 1px rgb(59, 59, 59);
+    transition: (3px,3px);
+}
+
+#enviar {
+    display: inline-block;
+    margin: auto auto auto 370px;
+}
+
+footer {
+    background-color: #F9B208;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 5px 5px 30px black;
+}
+
+@media screen and (max-width: 1100px) {
+
+    header {
+        max-width: min-content;
+    }
+    
+    header h1 {
+        max-width: min-content;
+        margin: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container div {
+        margin: 30px auto;
+    }
+}
